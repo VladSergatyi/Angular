@@ -8,4 +8,8 @@ let admin = new User({
   login: 'admin',
   password: '123456'
 })
-module.exports = User;
+let Note = mongoose.model('note', {
+  title: String,
+  context: String
+})
+module.exports = { User, Note };

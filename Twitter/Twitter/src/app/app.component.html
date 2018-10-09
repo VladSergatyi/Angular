@@ -1,1 +1,4 @@
-<app-login></app-login>
+<app-menu (sign) = 'sign($event)' (signin) = 'signin($event)'></app-menu>
+<app-login *ngIf = 'show == "login"'></app-login>
+<app-create-twit *ngIf = 'show == "create"'></app-create-twit>
+<app-sign-up *ngIf = ' show == "signup"'></app-sign-up>

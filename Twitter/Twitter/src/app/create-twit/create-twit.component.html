@@ -1,3 +1,18 @@
-<p>
-  create-twit works!
-</p>
+<div class="News">
+  <form (submit) = 'onSubmitNote()' >
+    <h2>Create new News</h2>
+    <label for="title">Title</label>
+    <br>
+    <input type="text" id="title" [(ngModel)] = 'title' name="title">
+    <br>
+    <label for="context">Context</label>
+    <br>
+    <textarea name="context" [(ngModel)] = 'context' rows="4" cols="60"></textarea>
+    <br>
+    <button type="submit" class="btn btn-success" name="button">Create News</button>
+  </form>
+</div>
+<div class="listTwit" *ngFor='let key of arrayNote'>
+  <h3>{{key.title}}</h3>
+  <h4>{{key.context}}</h4>
+</div>

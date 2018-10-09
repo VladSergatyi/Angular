@@ -1,0 +1,14 @@
+<div class="text-center">
+  <form class="form-signin" (ngSubmit) = 'signUpForm()'>
+      <h1 class="h3 mb-3 font-weight-normal">Please sign up</h1>
+      <label for="inputLogin" class="sr-only">Login</label>
+      <input type="text" id="inputLogin" name="login" class="form-control" [(ngModel)] = 'login' placeholder="Login" required autofocus>
+      <label for="inputPassword" class="sr-only">Password</label>
+      <input type="password" id="inputPassword" name="password" class="form-control" [(ngModel)] = 'password' placeholder="Password" required>
+      <label for="cPassword" class="sr-only">Confirm password</label>
+      <input type="password" id="cPassword" name="cPassword" class="form-control" [(ngModel)] = 'cPassword' placeholder="Confirm password" required>
+      <button class="btn btn-lg btn-primary btn-block" type="submit">Sign up</button>
+      <p class="mt-5 mb-3 text-muted">&copy; 2017-2018</p>
+      <h5 >{{errors}}</h5>
+    </form>
+</div>

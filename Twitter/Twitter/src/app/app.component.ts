@@ -7,4 +7,11 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'Twitter';
+  show = 'create'
+  sign(){
+    this.show = 'signup'
+  }
+  signin(){
+    this.show = 'login'
+  }
 }
